@@ -3,7 +3,7 @@ import crypto from 'crypto';
 function genKey() {
   return crypto
     .createHash('sha256')
-    .update('ActiveVSmart201218')
+    .update('keyString')
     .digest('hex')
     .substring(0, 32);
 }
